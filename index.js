@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     top: 0,
   },
   viewMoreText: {
-    color: 'blue',
+    color: '#876eff',
+    fontSize: 14
   },
   transparent: {
     opacity: 0,
@@ -60,7 +61,7 @@ class ViewMoreText extends React.Component {
 
   onPressMore = () => {
     this.setState({
-      numberOfLines: null,
+      // numberOfLines: null,
     }, () => {
       this.props.afterExpand();
     });
@@ -153,8 +154,8 @@ ViewMoreText.propTypes = {
 };
 
 ViewMoreText.defaultProps = {
-  afterCollapse: () => {},
-  afterExpand: () => {},
+  afterCollapse: () => { },
+  afterExpand: () => { },
   textStyle: {},
 };
 
