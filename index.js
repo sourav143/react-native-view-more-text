@@ -86,7 +86,7 @@ class ViewMoreText extends React.Component {
       style={styles.viewMoreText}
       onPress={this.onPressMore}
     >
-      View More
+      Read More
     </Text>
   )
 
